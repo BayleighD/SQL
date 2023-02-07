@@ -1,0 +1,21 @@
+create table clothing (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, style_number INTEGER, style TEXT);
+
+insert into clothing values (1, "tank top", 18.00, 101, "sleeveless");
+insert into clothing values (2, "flare jeans", 95.00, 102, "denim");
+insert into clothing values (3, "striped sweater", 108.00, 103, "long sleeve");
+insert into clothing values (4, "skinny jeans", 110.00, 104, "denim");
+insert into clothing values (5, "cropped tee", 25.00, 105, "short sleeve");
+insert into clothing values (6, "bralette", 30.00, 106, "intimates");
+insert into clothing values (7, "sandals", 98.00, 107, "footwear");
+insert into clothing values (8, "v-neck tee", 27.00, 108, "short sleeve");
+insert into clothing values (9, "bike shorts", 50.00, 109, "activewear");
+insert into clothing values (10, "sports bra", 45.00, 110, "activewear");
+insert into clothing values (11, "leather leggings", 85.00, 111, "pants");
+insert into clothing values (12, "bomber jacket", 145.00, 112, "outerwear");
+insert into clothing values (13, "puffer coat", 198.00, 113, "outerwear");
+insert into clothing values (14, "chambray button down", 58.00, 114, "long sleeve");
+insert into clothing values (15, "Ugg boots", 198.00, 115, "footwear");
+
+select * from clothing where price order by price;
+
+select style, MAX (price) from clothing group by style;
